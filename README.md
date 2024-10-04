@@ -13,7 +13,7 @@ This network is crucial for the next classification step, where patients are cat
 
 # Datasets
 
-![alt text](https://github.com/francescogra/MasterThesisExam//blob/main/slide1.png "Dataset")
+![alt text](https://github.com/francescogra/MasterThesisExam/blob/main/slide1.png "Dataset")
 
 The METABRIC (Molecular Taxonomy of Breast Cancer International Consortium) dataset, a widely recognised body of genomic and clinical data in the field of breast cancer research, was used for this project. It provides a comprehensive molecular characterisation of over 2000 tumours.
 Specifically, the analysis focused on the METABRIC gene expression data, which provide a quantitative representation of the transcriptional activity of thousands of genes in each tumour sample.
@@ -38,4 +38,4 @@ This preliminary phase proved crucial in order to acquire a solid knowledge of t
 6. Finally, after training, the model is tested using the test set to assess its ability to generalise to unseen data.
 
 
-![alt text](https://github.com/francescogra/MasterThesisExam//blob/main/slide2.png "patients Network")
+![alt text](https://github.com/francescogra/MasterThesisExam/blob/main/slide2.png "patients Network")
