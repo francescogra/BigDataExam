@@ -39,3 +39,19 @@ This preliminary phase proved crucial in order to acquire a solid knowledge of t
 
 
 ![alt text](https://github.com/francescogra/MasterThesisExam/blob/main/slide2.png "patients Network")
+
+
+# Results and conclusion
+
+
+Initially, analysis of the METABRIC dataset revealed a strong imbalance between survival classes, with 183 samples for OS>=2 and only 30 for OS<2. This imbalance required the implementation of balancing techniques, in particular the use of SMOTE, which resulted in an increase in minority class samples from 30 to 183, creating a more balanced dataset of 366 total samples.
+
+Another critical aspect was the optimisation of the patient network structure. By applying the Elbow and Silhouette Score methods, the optimal number of clusters for the K-means algorithm was reduced from 50 to 12, significantly improving the quality of patient segmentation and increasing the number of connections in the network from 2200 to 3000 nodes.
+
+Experimentation with different optimisers and activation functions produced remarkable results. In particular, the Adagrad optimiser showed the best performance, with a test accuracy of 94.41% and a loss of 0.191. Among the activation functions, torch.log_softmax proved to be the most effective, with a test accuracy of 92.47% and a loss of 0.216.
+
+The introduction of the adjacency matrix normalisation in the GCN forward function was a turning point that significantly improved the performance of the model. This change increased the training accuracy from 90.03% to 94.58% and reduced the training loss from 0.266 to 0.149.
+
+In the final optimised configuration, the model achieved excellent results on the test set with a loss of 0.0965, an accuracy of 96.36%, an F1 score of 0.9636, an accuracy of 96.43% and a recall of 96.36%. These results demonstrate the robustness and effectiveness of the proposed model in stratifying breast cancer patients.
+
+Comparison with other graph-based models, such as GraphSAGE and GAT, highlighted the potential of GCN. In particular, GraphSAGE showed comparable performance, suggesting that it could be a viable alternative in certain contexts.
