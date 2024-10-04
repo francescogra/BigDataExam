@@ -9,9 +9,10 @@ Using graphs to extract structural information, the model aims to classify breas
 The model exploits advanced graph representation and convolution techniques to construct a normalised adjacency matrix representing the network of gene interactions. For each patient and gene, a normal distribution is constructed based on the detected gene expression values, sampling repeatedly to obtain a three-dimensional matrix. Subsequently, a GCN-based autoencoder reduces the size of these matrices, creating a new network of patient interactions.
 This network is crucial for the next classification step, where patients are categorised according to their short- or long-term survival. The model thus constructed is then evaluated through a series of performance metrics to ensure its accuracy and reliability.
 
+# Datasets
+
 ![alt text](https://github.com/francescogra/GraphConvolutionalNetworkThesisExam/blob/main/slide1.png "Master's thesis")
 
-# Datasets
 The METABRIC (Molecular Taxonomy of Breast Cancer International Consortium) dataset, a widely recognised body of genomic and clinical data in the field of breast cancer research, was used for this project. It provides a comprehensive molecular characterisation of over 2000 tumours.
 Specifically, the analysis focused on the METABRIC gene expression data, which provide a quantitative representation of the transcriptional activity of thousands of genes in each tumour sample.
 At a biological level, genes are segments of DNA that contain instructions for building proteins, while gene expression determines which proteins are produced in a cell, and thus which functions the cell can perform.
