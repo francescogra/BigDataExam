@@ -9,7 +9,18 @@ Using graphs to extract structural information, the model aims to classify breas
 The model exploits advanced graph representation and convolution techniques to construct a normalised adjacency matrix representing the network of gene interactions. For each patient and gene, a normal distribution is constructed based on the detected gene expression values, sampling repeatedly to obtain a three-dimensional matrix. Subsequently, a GCN-based autoencoder reduces the size of these matrices, creating a new network of patient interactions.
 This network is crucial for the next classification step, where patients are categorised according to their short- or long-term survival. The model thus constructed is then evaluated through a series of performance metrics to ensure its accuracy and reliability.
 
-The following is a preliminary description of all the steps in the algorithm:
+![alt text](https://github.com/francescogra/GraphConvolutionalNetworkThesisExam/blob/main/slide1.png "Master's thesis")
+
+# Datasets
+The METABRIC (Molecular Taxonomy of Breast Cancer International Consortium) dataset, a widely recognised body of genomic and clinical data in the field of breast cancer research, was used for this project. It provides a comprehensive molecular characterisation of over 2000 tumours.
+Specifically, the analysis focused on the METABRIC gene expression data, which provide a quantitative representation of the transcriptional activity of thousands of genes in each tumour sample.
+At a biological level, genes are segments of DNA that contain instructions for building proteins, while gene expression determines which proteins are produced in a cell, and thus which functions the cell can perform.
+Since in cancer, gene expression patterns are often altered, comparing healthy patients with non-healthy patients can help identify potential therapeutic targets.
+The approach that was adopted laid its foundations on a detailed and thorough understanding of the datasets, an essential prerequisite for developing the code in a manner channelled to the intended goal. The first steps were in fact to examine in detail the structure and composition of the datasets, their nature and typology.
+This preliminary phase proved crucial in order to acquire a solid knowledge of the available information and its interconnections.
+
+
+# The following is a preliminary description of all the steps in the algorithm:
 
 1. The gene data are pre-processed to correct the format and normalise the values. After removing unnecessary columns and replacing non-standard characters, a data matrix is created that includes the patients' gene expressions. These data are then used to generate random samples based on the normal distribution, representing the patients' gene expressions.
 
