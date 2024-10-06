@@ -1,6 +1,11 @@
-# Master's thesis
+# Big Data experimental Thesis - University of Catania
 
-# A Graph Convolutional Network-based model for the stratification of patients with non-communicable diseases
+## Thesis Title
+**A Graph Convolutional Network-based model for the stratification of patients with non-communicable diseases**
+
+## Project Overview
+This repository contains the experimental thesis project for the Master of Data Science at the University of Catania. The focus of this project is on applying **Graph Convolutional Network** to tackle the challenge of **the stratification of patients with non-communicable diseases**. 
+The goal of the model aims to classify breast cancer patients according to their prognosis, distinguishing between short- and long-term survival.
 
 ![alt text](https://github.com/francescogra/MasterThesisExam/blob/main/slide3.jpg "GCN")
 
